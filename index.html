@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <meta name="theme-color" content="#000000" >
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link type="text/css" rel="stylesheet" href="style.css" >
+  </head>
+  <body>
+    <header>
+      <h1>Calculator</h1>
+    </header>
+    <div id="screen" >0</div>
+  
+    <table>
+      <div id="page1">
+        <button onclick="allClear()" class="ac" >AC</button>
+        <button onclick="screen.innerHTML = 'Hostory: ' + memory">&#128337;</button>
+        <button onclick="showPage2()">&gt;&gt;</button>
+        <button onclick="removeLast()">&lt;</button><br>
+        <button onclick="add('9')">9</button>
+        <button onclick="add('8')">8</button>
+        <button onclick="add('7')">7</button>
+        <button onclick="add(' / ')">/</button><br>
+        <button onclick="add('6')">6</button>
+        <button onclick="add('5')">5</button>
+        <button onclick="add('4')">4</button>
+        <button onclick="add(' * ')">*</button><br>
+        <button onclick="add('3')">3</button>
+        <button onclick="add('2')">2</button>
+        <button onclick="add('1')">1</button>
+        <button onclick="add(' - ')">&minus;</button><br>
+        <button onclick="add('0')">0</button>
+        <button onclick="add('.')">.</button>
+        <button onclick="add(' + ')">&plus;</button>
+        <button onclick="sum()">=</button>
+      </div>
+  
+      <div id="page2" hidden>
+        <button onclick="allClear()" class="ac">AC</button>
+        <button onclick="add('!(')">!</button>
+        <button onclick="showPage1()">&gt;&gt;</button>
+        <button onclick="removeLast()">&lt;</button>
+        <button onclick="add('²')">x²</button>
+        <button onclick="add('³')">x³</button>
+        <button onclick="add('**')">**</button>
+        <button onclick="add('&#8730;(')">&#8730;</button>
+        <button onclick="add('&pi;')">&pi;</button>
+        <button onclick="add('e')">e</button>
+        <button onclick="add('e**')">E<sup>x</sup></button>
+        <button onclick="add('<sup>3</sup>&#8730;(')"><sup>3</sup>&#8730;</button>
+        <button onclick="add('sin(')">sin</button>
+        <button onclick="add('cos(')">cos</button>
+        <button onclick="add('tan(')">tan</button>
+        <button onclick="add('ln(')">ln</button>
+        <button onclick="add('log10(')">log<sub>10</sub></button>
+        <button onclick="add('(')">(</button>
+        <button onclick="add(')')">)</button>
+        <button onclick="sum()">=</button>
+      </div>
+    </table>
+    
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
