@@ -34,10 +34,6 @@ body{
     overflow-x:scroll;
   }
   
-  h1{
-    padding:-1%;
-  }
-  
   table {
     border-collapse:collapse;
   }
