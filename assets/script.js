@@ -1,7 +1,7 @@
 const screen = document.getElementById("screen"),
           page1 = document.getElementById("page1"),
           page2 = document.getElementById("page2")
-    var memory = [], i = 0
+var memory = [], i = 0
     
     function add(wtf){
       screen.innerHTML += wtf
@@ -76,4 +76,13 @@ const screen = document.getElementById("screen"),
       if(screen.innerHTML == ""){
         screen.innerHTML = 0
       }
+    }
+
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", function() {
+        navigator.serviceWorker
+          .register("/serviceWorker.js")
+          .then(res => console.log("service worker registered"))
+        .catch(err => console.log("service worker not registered", err))
+      })
     }
