@@ -1,0 +1,47 @@
+body{
+    background:black;
+    margin:0;
+    overflow-x:hidden;
+    max-height:100vh;
+    width:100vw;
+    color:white;
+  }
+  
+  button {
+    border:none;
+    width:calc(96vw/4);
+    height:calc(70vh/5);
+    background:black;
+    font-size:200%;
+    color:white;
+    text-align:center;
+    align-content:center;
+  }
+  
+  button:hover {
+    color:#ddaa00;
+  }
+  
+  #screen {
+    height:12vh;
+    padding-top:calc(12vh/2);
+    padding-left:3vw;
+    padding-right:3vw;
+    background:gray;
+    align-content:center;
+    color:white;
+    font-size:250%;
+    overflow-x:scroll;
+  }
+  
+  table {
+    border-collapse:collapse;
+  }
+  
+  .ac{
+    background:blue;
+  }
+  
+  sub, sup{
+    font-size:70%;
+  }
